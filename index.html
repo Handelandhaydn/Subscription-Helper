@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>H+H Discovery Alpha</title>
+		<meta name="description" content="Natural Language Form with custom text input and drop-down lists" />
+		<meta name="keywords" content="Natural Language UI, sentence form, text input, contenteditable, html5, css3, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="nl-blurred">
+		<div class="container demo-1">
+			
+			<header>
+				<h1>The Handel and Haydn Society<br><span>Discover our Bicentennial Season</span></h1>	
+			</header>
+			<div class="main clearfix">
+				<form id="nl-form" class="nl-form">
+					I love listening to <br>
+					<select>
+						<option value="1" selected>Baroque</option>
+						<option value="2">Classical</option>
+						<option value="3">Choral</option>
+					</select> music.
+					<br />My favorite composer 
+					<select>
+					is	<option value="1" selected>Haydn</option>
+						<option value="2">Handel</option>
+						<option value="3">Bach</option>
+						<option value="4">Mozart</option>
+						<option value="2">Mendellssohn</option>
+					</select>
+					.
+					<br />I want to see
+					<select>
+						<option value="1" selected>all</option>
+					 	<option value="1">1</option>
+                        <option value="2">2-4</option>
+					 	<option value="3">all Symphony Hall</option>
+					 	
+					</select>
+					performances during the 2014-2015 Bicentennial Season. <input type="text" value="" placeholder="any city" data-subline="For example: <em>Los Angeles</em> or <em>New York</em>"/>
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="submit">Experience Living Music</button>
+					</div>
+					<div class="nl-overlay"></div>
+				</form>
+			</div>
+		</div><!-- /container -->
+		<script src="js/nlform.js"></script>
+		<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+	</body>
+</html>
